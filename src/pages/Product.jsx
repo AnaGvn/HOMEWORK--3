@@ -4,6 +4,8 @@ import { useParams } from 'react-router-dom';
 // Importam ce avem nevoie.
 import { CartContext } from '../store/Cart/context';
 import { addToCart } from '../store/Cart/actions';
+import { FavoritesContext } from '../store/Favorites/context';
+import { addToFavorites } from '../store/Favorites/actions';
 
 export function Product() {
   // Vom modifica state-ul cart-ului, deci avem nevoie de dispatch.

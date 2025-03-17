@@ -2,9 +2,11 @@ import React, { useEffect, useState, useContext } from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-// Importam ce avem nevoie.
+
 import { CartContext } from '../store/Cart/context';
 import { addToCart } from '../store/Cart/actions';
+import { addToFavorites } from '../store/Favorites/actions';
+import { FavoritesContext } from '../store/Favorites/context';
 
 export function Products() {
   // Vom modifica state-ul cart-ului, deci avem nevoie de dispatch.
