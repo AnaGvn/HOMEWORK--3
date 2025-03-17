@@ -28,6 +28,11 @@ export function Product() {
 
   const productInfo = product.gameInfo || {};
   const { thumb, name, salePrice, retailPrice } = productInfo;
+  
+  function handleAddToFavorites(product) {
+    const actionResult = addToFavorites(product);
+    favoritesDispatch(actionResult);
+  }
 
   return (
     <div className="d-flex my-3 px-2">

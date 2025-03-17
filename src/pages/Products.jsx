@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-// Importam ce avem nevoie.
+
 import { CartContext } from '../store/Cart/context';
 import { addToCart } from '../store/Cart/actions';
 
