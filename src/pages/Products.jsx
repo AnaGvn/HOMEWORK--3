@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 
 import { CartContext } from '../store/Cart/context';
 import { addToCart } from '../store/Cart/actions';
+import { addToFavorites } from '../store/Favorites/actions';
+import { FavoritesContext } from '../store/Favorites/context';
 
 export function Products() {
   // Vom modifica state-ul cart-ului, deci avem nevoie de dispatch.
