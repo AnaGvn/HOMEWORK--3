@@ -27,6 +27,11 @@ export function Product() {
   // Extragem datele de inters din produs.
   const productInfo = product.gameInfo || {};
   const { thumb, name, salePrice, retailPrice } = productInfo;
+  
+  function handleAddToFavorites(product) {
+    const actionResult = addToFavorites(product);
+    favoritesDispatch(actionResult);
+  }
 
   function handleAddToCart(product){
     // Apelam funcntion cu actiunea aferenta adaugarii

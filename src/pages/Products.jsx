@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-import { addToCart } from '../store/Cart/actions';
-import { useContext } from 'react';
+// Importam ce avem nevoie.
 import { CartContext } from '../store/Cart/context';
 import { FavoritesContext } from '../store/Favorites/context';
 import { addToFavorites } from '../store/Favorites/actions';
